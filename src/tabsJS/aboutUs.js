@@ -18,6 +18,7 @@ function createHeroImage(){
 function createDescription(){
     const para=document.createElement('p');
     para.textContent='Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, sit.'
+    
     return para;
 }
 
