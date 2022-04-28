@@ -4,8 +4,6 @@ import loadContact from './tabsJS/contact.js';
 
 const contentDiv=document.getElementById('content');
 
-const testVariable=33;
-
 function initializeWebsite(){
     
     //create the DOM
@@ -53,19 +51,27 @@ function renderBody(){
     const mainBody=document.querySelector('main');
     mainBody.classList.remove('about','menu','contact');
     mainBody.textContent='';
+    
+    //fade in
+    mainBody.classList.add('fadeIn');
+    setTimeout(()=>{
+        mainBody.classList.remove('fadeIn');
+    },1000);
+    
 
+    
     const activeTab=document.querySelector('.activeTab').textContent;
     switch (activeTab) {
         case 'About Us':
             loadAboutUs();
             mainBody.classList.add('about');
             break;
-    
+            
         case 'Menu':
             loadMenu();
             mainBody.classList.add('menu');
             break;
-        
+            
         case 'Contact':
             loadContact();
             mainBody.classList.add('contact');
@@ -74,11 +80,16 @@ function renderBody(){
 }
 
 function tabSwitch(e){
+    if(e.target.classList.contains('activeTab'))
+        return;
+
     const navTabs=document.querySelectorAll('nav li');
     navTabs.forEach(tab=>tab.classList.remove('activeTab'));
     e.target.classList.add('activeTab');
 
     renderBody();
+
+
 }
 
 export default initializeWebsite;

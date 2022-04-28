@@ -20,6 +20,16 @@ body{
     color: $textcolor;
 }
 
+main{
+    &.fadeIn{
+        animation:fade 1s;
+    }
+    @keyframes fade {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+}
+
 
 
 @import './about.scss';
