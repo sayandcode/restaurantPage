@@ -1,0 +1,16 @@
+.contact{
+    .map{
+        width: 60%;
+        aspect-ratio: 2/1;
+        display: block;
+        margin: auto;
+        border-radius: $itemBorderRadius;
+    }
+
+    .phoneNo{
+        font-family: monospace;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-block: 1em;
+    }
+}    

@@ -2,7 +2,9 @@
 
 $textcolor:white;
 $accentColor:rgb(255, 217, 0);
-$greyishBlack: hsl(0, 0%, 9%);;
+$greyishBlack: hsl(0, 0%, 9%);
+$itemBorderRadius:20px;
+
 
 @import './navbar.scss';
 
@@ -22,3 +24,4 @@ body{
 
 @import './about.scss';
 @import './menu.scss';
+@import './contact.scss';
