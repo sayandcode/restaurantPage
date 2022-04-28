@@ -6,7 +6,6 @@ $greyishBlack: hsl(0, 0%, 9%);;
 
 @import './navbar.scss';
 
-
 *{
     margin: 0;
     padding: 0;
@@ -18,3 +17,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: $textcolor;
 }
+
+
+
+@import './about.scss';
+@import './menu.scss';
