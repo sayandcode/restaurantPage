@@ -4,6 +4,8 @@ import loadContact from './tabsJS/contact.js';
 
 const contentDiv=document.getElementById('content');
 
+const testVariable=33;
+
 function initializeWebsite(){
     
     //create the DOM
