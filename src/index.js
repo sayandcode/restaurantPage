@@ -1,4 +1,4 @@
 import './sass/index.scss';
-import {createNavBar} from './initPageLoad';
+import initializeWebsite from './pageActions.js';
 
-createNavBar();
+initializeWebsite();
