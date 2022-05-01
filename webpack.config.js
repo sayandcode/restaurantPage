@@ -2,15 +2,13 @@ const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 
 module.exports={
-    mode:'development',
+    mode:'production',
     entry:{
         main:path.resolve(__dirname,'src/index.js')
     },
-    devtool: 'inline-source-map',
     output:{
         filename:'[name].js',
         path: path.resolve(__dirname,'dist'),
-        clean:true
     },
     devServer:{
         static:path.resolve(__dirname,'dist'),
